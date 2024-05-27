@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in. You must
+# make exactly 11 lines for the formatting to be correct. It's also
+# customary to leave one space after the ':'.
+
+            |-----handy-ruler------------------------------------------------------|
+setools: setools (Policy analysis tools for SELinux)
+setools:
+setools: SETools is a collection of graphical tools, command-line tools, and
+setools: Python modules designed to facilitate SELinux policy analysis.
+setools:
+setools: Homepage: https://github.com/SELinuxProject/setools
+setools:
+setools:
+setools:
+setools:
+setools:

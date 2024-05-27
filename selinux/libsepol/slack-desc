@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in. You must
+# make exactly 11 lines for the formatting to be correct. It's also
+# customary to leave one space after the ':'.
+
+        |-----handy-ruler------------------------------------------------------|
+libsepol: libsepol (SELinux binary policy representation library)
+libsepol:
+libsepol: libsepol provides an API for the manipulation of SELinux binary
+libsepol: policies. It is used by checkpolicy (the policy compiler) and similar
+libsepol: tools, as well as by programs like load_policy that need to perform
+libsepol: specific transformations on binary policies such as customizing
+libsepol: policy boolean settings.
+libsepol:
+libsepol: Homepage: https://github.com/SELinuxProject/selinux/wiki
+libsepol:
+libsepol:

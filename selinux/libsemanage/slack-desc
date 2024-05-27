@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in. You must
+# make exactly 11 lines for the formatting to be correct. It's also
+# customary to leave one space after the ':'.
+
+           |-----handy-ruler------------------------------------------------------|
+libsemanage: libsemanage (SELinux kernel and policy management library)
+libsemanage:
+libsemanage: libsemanage provides an API for the manipulation of SELinux binary
+libsemanage: policies. It is used by checkpolicy (the policy compiler) and similar
+libsemanage: tools, as well as by programs like load_policy that need to perform
+libsemanage: specific transformations on binary policies such as customizing
+libsemanage: policy boolean settings.
+libsemanage:
+libsemanage: Homepage: https://github.com/SELinuxProject/selinux/wiki
+libsemanage:
+libsemanage:

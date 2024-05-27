@@ -1,0 +1,23 @@
+--- mcstrans-3.4/src/Makefile	2022-05-18 16:51:03.000000000 +0200
++++ mcstrans-3.4/src/Makefile.no-systemd	2023-02-23 10:55:47.477765651 +0100
+@@ -1,8 +1,7 @@
+ # Installation directories.
+ PREFIX ?= /usr
+ SBINDIR ?= /sbin
+-INITDIR ?= /etc/rc.d/init.d
+-SYSTEMDDIR ?= $(PREFIX)/lib/systemd
++INITDIR ?= /etc/rc.d
+ 
+ # If no specific libsepol.a is specified, fall back on LDFLAGS search path
+ # Otherwise, as $(LIBSEPOLA) already appears in the dependencies, there
+@@ -29,9 +28,7 @@
+ 	test -d $(DESTDIR)$(SBINDIR) || install -m 755 -d $(DESTDIR)$(SBINDIR)
+ 	install -m 755 $(PROG) $(DESTDIR)$(SBINDIR)
+ 	test -d $(DESTDIR)$(INITDIR) || install -m 755 -d $(DESTDIR)$(INITDIR)
+-	install -m 755 $(INITSCRIPT).init $(DESTDIR)$(INITDIR)/$(INITSCRIPT)
+-	test -d $(DESTDIR)$(SYSTEMDDIR)/system || install -m 755 -d $(DESTDIR)$(SYSTEMDDIR)/system
+-	install -m 644 mcstrans.service $(DESTDIR)$(SYSTEMDDIR)/system/
++	install -m 755 $(INITSCRIPT).init $(DESTDIR)$(INITDIR)/rc.$(INITSCRIPT)
+ 
+ clean: 
+ 	-rm -f $(OBJS) $(LOBJS) $(TARGET) $(PROG) $(PROG_OBJS) *~ \#*

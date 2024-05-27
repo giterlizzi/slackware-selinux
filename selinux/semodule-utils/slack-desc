@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description. Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in. You must
+# make exactly 11 lines for the formatting to be correct. It's also
+# customary to leave one space after the ':'.
+
+              |-----handy-ruler------------------------------------------------------|
+semodule-utils: semodule-utils (SELinux module tools)
+semodule-utils:
+semodule-utils: semodule-utils contains the tools used to build policy modules in an
+semodule-utils: SELinux environment.
+semodule-utils:
+semodule-utils: Homepage: https://github.com/SELinuxProject/selinux/wiki
+semodule-utils:
+semodule-utils:
+semodule-utils:
+semodule-utils:
+semodule-utils:
