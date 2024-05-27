@@ -32,7 +32,6 @@ cd $(dirname $0) ; CWD=$(pwd)
 INST=${INST:-1}
 
 TMP=${TMP:-/tmp}
-TAG=${TAG:-_selinux}
 
 # Package           | Slackware category
 # ------------------|-------------------
@@ -78,7 +77,7 @@ for dir in \
       touch /tmp/${package}.missing-slack-desc
     fi
 
-    TAG=$TAG TMP=$TMP \
+    TMP=$TMP \
     ./${package}.SlackBuild || ( touch /tmp/${package}.failed ; exit 1 ) || exit 1
 
     if [ "$INST" = "1" ]; then
