@@ -114,6 +114,8 @@ if [ -d $PKG/usr/man ]; then
   )
 fi
 
+mv $PKG/etc/rc.d/rc.restorecond $PKG/etc/rc.d/rc.restorecond.new
+
 mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
 cp -a \
   LICENSE VERSION \
@@ -121,6 +123,7 @@ cp -a \
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $TMP/${PKGNAM}-$VERSION-$ARCH-${BUILD}.txz

@@ -100,6 +100,8 @@ make install-rubywrap \
   find . | xargs file | grep "shared object" | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
 )
 
+mv $PKG/etc/selinux/semanage.conf $PKG/etc/selinux/semanage.conf.new
+
 # Move /usr/share/man pages in /usr
 if [ -d $PKG/usr/share/man ]; then
   mv $PKG/usr/share/man $PKG/usr
@@ -128,6 +130,7 @@ cp -a \
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $TMP/${PKGNAM}-$VERSION-$ARCH-${BUILD}.txz
