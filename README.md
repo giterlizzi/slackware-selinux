@@ -25,6 +25,8 @@ Build and install/upgrade all SELinux packages:
 * Optimize `selinux-policy` for Slackware Linux
 * Add all dependencies:
   * `audit`
+  * ...
+* Move all SELinux packages in Slackware categories (`a`, `ap`, `l`, etc.)
 * Rebuild some Slackware-core packages for SELinux
   * `a/coreutils`
   * `a/pam`
@@ -36,6 +38,6 @@ Build and install/upgrade all SELinux packages:
 
 ## Copyright
 
- - Copyright 2022-20124 © Giuseppe Di Terlizzi
+ - Copyright 2023-2024 © Giuseppe Di Terlizzi
  - Slackware® is a Registered Trademark of Patrick Volkerding
  - Linux is a Registered Trademark of Linus Torvalds
